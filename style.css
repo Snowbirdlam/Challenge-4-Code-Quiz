@@ -1,0 +1,35 @@
+header {
+   padding: 1em;
+   margin: 1em;
+    background-color: #000000;
+    -webkit-text-fill-color: aliceblue;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding-bottom: 5em;
+    padding-left: 5em;
+    margin: 5em;
+    width: 40em;
+    height: 20em;
+    -webkit-text-fill-color: aliceblue;
+    background-color: rgb(7, 75, 221);
+}
+
+
+.btn-group button {
+    background-color: rgb(33, 169, 153);
+    width: 40em;
+    height: 5em;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+}
