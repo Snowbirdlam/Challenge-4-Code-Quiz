@@ -10,38 +10,48 @@
     <title>Test Your Basic Coding Knowledge!</title>
 </head>
 
-<button class="startBtn">Start</button>
+<header>
+    <h1>Test Your Basic Coding Knowledge!</h1>
+</header>
+<div class="startBtn">
+    <button>Start</button>
+
+</div>
+<div class="Instructions">
+Test your basic coding knowledge for web development here before the timer runs out! For every incorrect answer, the timer will decrease by
+1 second faster. See if you can beat your own high score for amount of correct answers selected! Press the 'Start' button to start the quiz.
 </div>
 
-<header>
-        <h1>Test Your Basic Coding Knowledge!</h1>
-</header>
-
-</main>
-<div id="Container"></div>
-        <h4 class="Timing"></h4> 
-        </div>
-
-        <body>
-            <main id="Quiz">
-                <div class="container">
-                    <h2>Question</h2>
-                    <div class="question"></div>
-                    <div class="btn-group">
-                        <button class="A">A</button>
-                        <button class="B">B</button>
-                        <button class="C">C</button>
-                        <button class="D">D</button>
-                    </div>
-                    
-                    <div class="results"></div>
-            </main>
-            <script src="./script.js"></script>
-        </body>
-        <footer>
-            <div class="Brand">
-                <h6>Side Quests 2023</h6>
+<body>
+    <div id="Container"></div>
+    <main id="Quiz">
+        <h4 class="Timing"></h4>
+        <div class="container">
+            <h3 class="check"></h3>
+            <div class="question"></div>
+            <div class="btn-group">
+                <button class="A">A</button>
+                <button class="B">B</button>
+                <button class="C">C</button>
+                <button class="D">D</button>
             </div>
-        </footer>
+
+            <h3 class="results"></h3>
+
+            <div class="card">
+                <p></p>
+                <div class="savedInitials">
+                    <button class="SaveButton"></button>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+<footer>
+    <div class="Brand">
+        <h5>Side Quests 2023</h5>
+    </div>
+</footer>
 
 </html>

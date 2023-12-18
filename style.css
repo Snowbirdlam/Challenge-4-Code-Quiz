@@ -1,9 +1,28 @@
+.startBtn button {
+    background-color: #0c2d6b;
+    height: 3em;
+    width: 5em;
+    -webkit-text-fill-color: blanchedalmond;
+}
+
+.startBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.Instructions {
+padding: 1em;
+margin: 1em;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 header {
    padding: 1em;
    margin: 1em;
     background-color: #000000;
     -webkit-text-fill-color: aliceblue;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {
@@ -12,22 +31,47 @@ main {
     align-items: center;
 }
 
+.Timing {
+    font-size: 1.6em;
+}
+
 .container {
-    padding-bottom: 5em;
+    padding-top: 2em; 
+    padding-bottom: 6em;
     padding-left: 5em;
-    margin: 5em;
+    margin: 1em;
     width: 40em;
     height: 20em;
     -webkit-text-fill-color: aliceblue;
-    background-color: rgb(7, 75, 221);
+    background-color: rgb(12, 99, 107);
 }
 
+
+.btn-group {
+    justify-content: center;
+    align-items: center;
+}
+
+.check {
+    padding: 0.5em;
+    margin: 0.5em;
+    font-size: medium;
+}
+
+.question {
+    font-size: 1.5em;
+}
 
 .btn-group button {
     background-color: rgb(33, 169, 153);
     width: 40em;
     height: 5em;
     text-align: left;
+}
+
+.results {
+    background-color: rgb(166, 155, 104);
+    font-size: 1.5em;
 }
 
 footer {
