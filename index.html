@@ -15,11 +15,30 @@
 </header>
 <div class="startBtn">
     <button>Start</button>
-
 </div>
+
 <div class="Instructions">
 Test your basic coding knowledge for web development here before the timer runs out! For every incorrect answer, the timer will decrease by
 1 second faster. See if you can beat your own high score for amount of correct answers selected! Press the 'Start' button to start the quiz.
+</div>
+
+<div class="card">
+    <h4>Enter your initials here to save your score:</h4>
+    <form>
+            <label for="Initials">Initials </label>
+            <textarea id="Initials" name="comments"></textarea>
+          <ul>
+        <button id="SaveButton">Save</button>
+        </div>
+    </div>
+</form>
+</div>
+
+<div class="Scorecard">
+    <h4>Saved Scores</h4>
+    <p>Initials:<class id="saved-Initials"></class></p>
+      <p>Score: <class id="saved-count"></class></p>
+    </div>
 </div>
 
 <body>
@@ -35,15 +54,7 @@ Test your basic coding knowledge for web development here before the timer runs 
                 <button class="C">C</button>
                 <button class="D">D</button>
             </div>
-
             <h3 class="results"></h3>
-
-            <div class="card">
-                <p></p>
-                <div class="savedInitials">
-                    <button class="SaveButton"></button>
-                    </div>
-                </div>
             </div>
     </main>
     <script src="./script.js"></script>

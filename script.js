@@ -16,8 +16,8 @@ function setTime() {
         timer.textContent = secondsLeft + ' seconds remaining';
 
         if (secondsLeft === 0) {
-            clearInterval(timerInterval);
             timer.textContent = 'Time is up!'
+            clearInterval(timerInterval);
         }
     }, 1000)
 }
@@ -180,7 +180,6 @@ let checkquestion = function (e) {
     index++;
     if (index < questionarray.length) {
         nextquestion()
-    } else {
         answercount.textContent = 'You answered ' + correctAnswersCount + ' questions correctly.'
     }
 }
@@ -190,23 +189,46 @@ let correctAnswersCount = 0;
 let decrementSeconds = function () {
     secondsLeft--;
     timer.textContent = secondsLeft + ' seconds remaining'
+
+    if (secondsLeft === 0) {
+        timer.textContent = 'Time is up!'
+        clearInterval(timerInterval);
+        return
+    }
 }
 
-// let name = document.querySelector(".savedInitials");
 
-// function saveLastScore() {
-//    var saveScore = {
-//     correctAnswersCount: correctAnswersCount.valueOf,
-//     name: comment.valueOf.trim,
-// }
-// localStorage.setItem('saveScore', JSON.stringify(saveScore));
-// }
+let FirstLast = document.getElementById('Initials');
+let save = document.getElementById('SaveButton')
+var scores = JSON.parse(localStorage.getItem("scores")) || [];
 
-// function renderLastScore() {
-//     var LastScore = JSON.parse(localStorage.getItem('LastScore'));
-//     if (LastScore !== null) {
-//         document.getElementById('.check').innerHTML = check.savedAnswersCount;
-//         document.getElementById('.savedInitials').innerHTML = savedInitials.comment;    
-//     }
-// }
+function saveLastScore() {
+    var saveScore = {
+        FirstLast: FirstLast.value.trim(),
+        correctAnswersCount: correctAnswersCount,
+    };
+    console.log(saveScore);
+    scores.push(saveScore);
+    localStorage.setItem('saveScore', JSON.stringify(saveScore));
+}
 
+function renderLastScore() {
+    var LastScore = JSON.parse(localStorage.getItem('saveScore'));
+
+    if (LastScore !== null) {
+        document.getElementById('saved-Initials').textContent = LastScore.FirstLast;
+        document.getElementById('saved-count').textContent = LastScore.correctAnswersCount + ' answered correctly';
+    }
+}
+
+save.addEventListener("click", function (event) {
+    event.preventDefault();
+    console.log("Button clicked!")
+    saveLastScore();
+    renderLastScore();
+});
+
+function init() {
+    renderLastScore();
+}
+init();
