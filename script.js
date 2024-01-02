@@ -192,8 +192,11 @@ let decrementSeconds = function () {
 
     if (secondsLeft === 0) {
         timer.textContent = 'Time is up!'
+    }
+
+    if(secondsLeft < 0) {
         clearInterval(timerInterval);
-        return
+        return;
     }
 }
 
