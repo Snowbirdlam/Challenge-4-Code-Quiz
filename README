@@ -1,0 +1,32 @@
+## Description
+
+I created a quiz to help students review coding concepts in HTML, CSS, and javascript. Instead of static words on a screen or page, this application provides a more dynamic experience in the study of basic web development concepts. 
+
+This project furthered my knowledge of javascript and how to create more interactive elements. It also improved my coding problem solving and debugging skills. I had to learn how to create consistency between different functions like making sure the timer both ran when the start button was pressed and also decremented one second when someone clicked on an incorrect answer. It had multifaceted effects in furthering my understanding of web development. 
+
+
+## Usage
+
+![alt text]("./Screenshots\Screenshot 2024-01-02 000504.png")
+This shows the default mode before the code is run, there are no scores currently showing though there may be some stored in local storage.
+![alt text]("./Screenshots\Screenshot 2024-01-02 094733.png")
+This is where the questions, timer, and number of questions answered correctly will appear once the start button is clicked on. On the right is the card to save your initials and scores. 
+![alt text]("./Screenshots\Screenshot 2024-01-02 094750.png")
+Once the start button is pressed, the timer appears to the left and multiple questions appear in the middle container and button group. 
+![alt text]("./Screenshots\Screenshot 2024-01-02 094807.png")
+Everytime the user clicks on the incorrect answer button for a particular question, one second is taken off the timer and does not count in the amount of questions answered correctly. 
+![alt text]("./Screenshots\Screenshot 2024-01-02 094829.png")
+If the user clicks on the correct answer button, it is counted towards their score. Also note here that everytime a user clicks on a correct or incorrect answer, there is a note on the top of the questions container that notifies if they answered correctly. 
+![alt text]("./Screenshots\Screenshot 2024-01-02 094850.png")
+When the timer finishes counting down, a message appears that time is up will appear. Future updates would include preventing the timer from going into negative seconds if the user continues the quiz and chooses incorrect answers. I would also ensure the quiz cannot be continued after the timer stops in the future. Furthermore, I would also ensure that the score they get after the timer stops is the one that is stored in local storage. Lastly, I would also make sure that once they have answered all the questions, the timer will stop running. 
+![alt text]("./Screenshots\Screenshot 2024-01-02 094911.png")
+After they finish the quiz, they can save their score by entering their initials into the box at the right. 
+![alt text]("./Screenshots\Screenshot 2024-01-02 094924.png")
+Once they saved their initials, they can scroll up and see that their score is saved on the score card for their next game. 
+
+## Credits
+
+I have been helped by my tutor Andrew Hardemon in figuring out how to better structure and code in my questions and that the logic can work with the timer and runs smoothly after the start button is clicked. Andrew also helped a bit on my code storing information in local storage. Tom Gold has helped me with figuring out logic in saving scores into local storage and working through issues of saved information showing up on the screen. I really appreciate their help on this code. 
+
+## License
+MIT
